@@ -1,0 +1,36 @@
+name: smart_attendance
+description: "Flutter project for smart attendance using MobileFaceNet."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core packages
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+
+  # ML / Image / Camera
+  tflite_flutter: ^0.11.0
+  camera: ^0.11.2
+  image: ^4.0.20
+  image_picker: ^1.0.7
+
+  # Charts or analytics
+  fl_chart: ^0.70.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/nn_top.gif
