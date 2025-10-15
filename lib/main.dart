@@ -1,4 +1,3 @@
-// main.dart
 import 'dart:io';
 import 'dart:math';
 import 'package:flutter/material.dart';
@@ -50,7 +49,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
   }
 
   void _initFakeDb() {
-    // Simulate fake embeddings DB for demo
+    
     setState(() {
       _appReady = true;
       statusMessage = "Ready";
@@ -259,7 +258,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
       return;
     }
 
-    // Fake embedding generation for demo
+    
     final rand = Random();
     final embedding =
         List.generate(embeddingSize, (_) => rand.nextDouble() * 2 - 1);
@@ -274,7 +273,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
       List<double> embedding, String label, bool success, double cl) {
     double rms = sqrt(embedding.fold(0.0, (p, v) => p + v * v) / embedding.length);
 
-    // Generate smooth 36-point slice for graph
+   
     List<double> smoothSlice = [];
     for (int i = 0; i < 36; i++) {
       int idx = (i * embedding.length ~/ 36);
